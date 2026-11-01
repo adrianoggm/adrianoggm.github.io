@@ -42,6 +42,16 @@ const caseStudies = {
     tags: ['Python', 'LangGraph', 'Conversational AI', 'Voice', 'Financial Workflows', 'Safety'],
     note: 'Proof of concept only. It uses generated data and is not connected to a real bank.'
   },
+  moodpal: {
+    repository: 'https://github.com/adrianoggm/MoodPal',
+    label: 'AWARD-WINNING TEAM PROJECT / HACKFORGOOD UGR 2024',
+    title: 'MoodPal — emotional wellbeing, designed with care.',
+    intro: 'A mental wellbeing app built with a multidisciplinary team during a 48-hour Telefónica-organised hackathon.',
+    challenge: 'Make it easier for people to notice and manage their emotions, find helpful guidance and reach support when they need it.',
+    approach: 'Contributed to an Android prototype with daily emotion tracking, virtual companion Lani, a panic button and routes to professional support. The team won second prize at HackForGood UGR 2024 and qualified for the national phase.',
+    tags: ['Java', 'Android', 'Emotion tracking', 'Virtual assistant', 'Team project'],
+    note: 'Student hackathon prototype developed by a team. MoodPal is a wellbeing project, not a substitute for professional care.'
+  },
   devops: {
     label: 'ENGINEERING / PROFESSIONAL WORK',
     title: 'From commit to production, with confidence.',

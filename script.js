@@ -42,6 +42,16 @@ const caseStudies = {
     tags: ['Python', 'LangGraph', 'Conversational AI', 'Voice', 'Financial Workflows', 'Safety'],
     note: 'Proof of concept only. It uses generated data and is not connected to a real bank.'
   },
+  footballhub: {
+    repository: 'https://github.com/adrianoggm/footballhubmanager',
+    label: 'PRODUCT ENGINEERING / FULL-STACK SIDE PROJECT',
+    title: 'FootballHubManager — match data for the whole community.',
+    intro: 'A full-stack platform for amateur football communities, from player and season management to match-based insights.',
+    challenge: 'Community organizers need one place to manage membership, fixtures, lineups, player stats and standings—and players need a clear view of how their season is going.',
+    approach: 'Built a Python FastAPI backend with Hexagonal Architecture and a React/Vite frontend. The product includes role-based admin and user dashboards, season and match workflows, standings, player-performance insights and match visualizations.',
+    tags: ['Python', 'FastAPI', 'React', 'MySQL', 'Hexagonal Architecture', 'Analytics'],
+    note: 'The dashboard image uses sample data from the project repository.'
+  },
   moodpal: {
     repository: 'https://github.com/adrianoggm/MoodPal',
     image: 'assets/moodpalteam.png',

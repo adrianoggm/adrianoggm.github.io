@@ -87,15 +87,9 @@
         </div>
         <div class="showcase-grid">
           <article class="showcase-card fl-showcase reveal">
-            <div class="showcase-top"><span>ONION-FL / SYSTEM VIEW</span><a href="https://github.com/adrianoggm/Onion-FL" target="_blank" rel="noopener noreferrer">SOURCE ↗</a></div>
-            <div class="fl-diagram" role="img" aria-label="Onion-FL hierarchical edge, fog and cloud architecture">
-              <div class="diagram-cloud"><span class="diagram-node cloud-node">CLOUD <small>coordinator</small></span></div>
-              <div class="diagram-links cloud-links"><i></i><i></i></div>
-              <div class="diagram-fogs"><span class="diagram-node fog-node">FOG A <small>aggregator</small></span><span class="diagram-node fog-node">FOG B <small>aggregator</small></span></div>
-              <div class="diagram-links edge-links"><i></i><i></i><i></i><i></i></div>
-              <div class="diagram-edges"><span class="edge-device">EDGE 01</span><span class="edge-device">EDGE 02</span><span class="edge-device">EDGE 03</span><span class="edge-device">EDGE 04</span></div>
-            </div>
-            <div class="showcase-bottom"><div><strong>Edge → Fog → Cloud</strong><span>Hierarchical federated learning</span></div><div class="showcase-pills"><span>SIMULATOR</span><span>MQTT</span><span>LIVE MONITOR</span></div></div>
+            <div class="showcase-top"><span>ONION-FL / FOUR-FOG TOPOLOGY</span><a href="https://github.com/adrianoggm/Onion-FL/blob/main/docs/diagrams/four_fogs.mmd" target="_blank" rel="noopener noreferrer">SOURCE GRAPH ↗</a></div>
+            <div class="fl-diagram"><picture><source media="(max-width: 600px)" srcset="assets/onion-fl-four-fogs-mobile.svg" /><img src="assets/onion-fl-four-fogs.svg" alt="Onion-FL graph: a cloud coordinator connects to four fog aggregators, each linked to edge clients. The fog links use MQTT, JSON and Wi-Fi; edge links use MQTT, JSON and 4G." loading="lazy" /></picture></div>
+            <div class="showcase-bottom"><div><strong>Cloud → fog aggregators → edge clients</strong><span>Four-fog topology from the Onion-FL repository</span></div><div class="showcase-pills"><span>TOPOLOGY</span><span>MQTT</span><span>EDGE AI</span></div></div>
           </article>
           <article class="showcase-card paper-showcase reveal">
             <div class="showcase-top"><span>TIME-SERIES RESEARCH / FIGURE</span><a href="https://github.com/adrianoggm/time-series-image-reconstruction" target="_blank" rel="noopener noreferrer">PAPER + CODE ↗</a></div>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 800" role="img" aria-labelledby="title desc">
+  <title id="title">Onion-FL four-fog topology, mobile layout</title>
+  <desc id="desc">The cloud coordinator connects to four fog aggregators and four edge-client groups, matching the four-fog topology in the Onion-FL repository.</desc>
+  <defs>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#6f997b" stroke-opacity=".09"/></pattern>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#71997b"/></marker>
+    <marker id="arrow-warm" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#d28a6e"/></marker>
+  </defs>
+  <rect width="680" height="800" rx="14" fill="#edf3e9"/><rect width="680" height="800" rx="14" fill="url(#grid)"/>
+  <text x="28" y="35" fill="#728078" font-family="monospace" font-size="15" letter-spacing="1.5">ONION-FL · FOUR-FOG TOPOLOGY</text>
+  <g fill="none" stroke="#71997b" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M274 137C230 169 166 177 166 224"/><path d="M406 137C450 169 514 177 514 224"/>
+    <path d="M203 100C36 153 30 431 166 480"/><path d="M477 100C644 153 650 431 514 480"/>
+  </g>
+  <g fill="#5c7662" font-family="monospace" font-size="13" text-anchor="middle"><text x="190" y="185">mqtt / json / wifi</text><text x="490" y="185">mqtt / json / wifi</text><text x="54" y="332" transform="rotate(-90 54 332)">mqtt / json / wifi</text><text x="626" y="332" transform="rotate(90 626 332)">mqtt / json / wifi</text></g>
+  <g><rect x="190" y="60" width="300" height="78" rx="11" fill="#fffaf3" stroke="#d28a6e" stroke-width="2"/><circle cx="222" cy="99" r="8" fill="#d28a6e"/><text x="245" y="96" fill="#263d34" font-family="Arial,sans-serif" font-size="21" font-weight="700">CLOUD</text><text x="245" y="120" fill="#728078" font-family="monospace" font-size="14">global · coordinator</text></g>
+  <g font-family="Arial,sans-serif" font-size="16">
+    <g><rect x="48" y="224" width="236" height="76" rx="9" fill="#fffefa" stroke="#8eb397" stroke-width="2"/><circle cx="72" cy="262" r="6" fill="#5d9870"/><text x="90" y="258" fill="#294239" font-weight="700">FOG A1</text><text x="90" y="280" fill="#758279" font-family="monospace" font-size="12">fog · aggregator</text></g>
+    <g><rect x="396" y="224" width="236" height="76" rx="9" fill="#fffefa" stroke="#8eb397" stroke-width="2"/><circle cx="420" cy="262" r="6" fill="#5d9870"/><text x="438" y="258" fill="#294239" font-weight="700">FOG A2</text><text x="438" y="280" fill="#758279" font-family="monospace" font-size="12">fog · aggregator</text></g>
+    <g><rect x="48" y="480" width="236" height="76" rx="9" fill="#fffefa" stroke="#8eb397" stroke-width="2"/><circle cx="72" cy="518" r="6" fill="#5d9870"/><text x="90" y="514" fill="#294239" font-weight="700">FOG B1</text><text x="90" y="536" fill="#758279" font-family="monospace" font-size="12">fog · aggregator</text></g>
+    <g><rect x="396" y="480" width="236" height="76" rx="9" fill="#fffefa" stroke="#8eb397" stroke-width="2"/><circle cx="420" cy="518" r="6" fill="#5d9870"/><text x="438" y="514" fill="#294239" font-weight="700">FOG B2</text><text x="438" y="536" fill="#758279" font-family="monospace" font-size="12">fog · aggregator</text></g>
+  </g>
+  <g fill="none" stroke="#d28a6e" stroke-width="2.5" marker-end="url(#arrow-warm)"><path d="M166 362V306"/><path d="M514 362V306"/><path d="M166 618V562"/><path d="M514 618V562"/></g>
+  <g fill="#a96651" font-family="monospace" font-size="11" text-anchor="middle"><text x="166" y="350">mqtt / json / 4g</text><text x="514" y="350">mqtt / json / 4g</text><text x="166" y="606">mqtt / json / 4g</text><text x="514" y="606">mqtt / json / 4g</text></g>
+  <g font-family="monospace" font-size="11" text-anchor="middle" fill="#526b5a">
+    <g><rect x="48" y="362" width="236" height="58" rx="8" fill="#e2ede0" stroke="#b5cdb6"/><circle cx="83" cy="391" r="6" fill="#7ca887"/><circle cx="103" cy="391" r="6" fill="#7ca887"/><circle cx="123" cy="391" r="6" fill="#7ca887"/><text x="204" y="395">EDGE CLIENTS</text></g>
+    <g><rect x="396" y="362" width="236" height="58" rx="8" fill="#e2ede0" stroke="#b5cdb6"/><circle cx="431" cy="391" r="6" fill="#7ca887"/><circle cx="451" cy="391" r="6" fill="#7ca887"/><circle cx="471" cy="391" r="6" fill="#7ca887"/><text x="552" y="395">EDGE CLIENTS</text></g>
+    <g><rect x="48" y="618" width="236" height="58" rx="8" fill="#e2ede0" stroke="#b5cdb6"/><circle cx="83" cy="647" r="6" fill="#7ca887"/><circle cx="103" cy="647" r="6" fill="#7ca887"/><circle cx="123" cy="647" r="6" fill="#7ca887"/><text x="204" y="651">EDGE CLIENTS</text></g>
+    <g><rect x="396" y="618" width="236" height="58" rx="8" fill="#e2ede0" stroke="#b5cdb6"/><circle cx="431" cy="647" r="6" fill="#7ca887"/><circle cx="451" cy="647" r="6" fill="#7ca887"/><circle cx="471" cy="647" r="6" fill="#7ca887"/><text x="552" y="651">EDGE CLIENTS</text></g>
+  </g>
+</svg>

@@ -45,7 +45,7 @@ This is optional and does not require changing your portfolio repository.
 - `styles.css`: design, color palette, responsive layout and animations.
 - `script.js`: project case studies, filters, mobile menu and interactive dialogs.
 - `config.js`: verified public email, LinkedIn and GitHub links. Change or remove them as desired before publishing.
-- `assets/`: favicon, social sharing card, profile portrait, research figures, and MoodPal logo and team photo.
+- `assets/`: favicon, social sharing card, profile portrait, research figures, MoodPal logo and team photo, and desktop/mobile SVG renderings derived from Onion-FL's `docs/diagrams/four_fogs.mmd` topology.
 - `.github/workflows/deploy.yml`: GitHub Pages deployment workflow.
 
 **Before publishing:** review any public contact details and company-related metrics or claims. Professional projects do not include client names, private configuration, sensitive architecture or proprietary code. Research project descriptions do not imply acceptance/publication of manuscripts.

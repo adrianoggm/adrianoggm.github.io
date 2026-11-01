@@ -180,9 +180,8 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--coral); outline
 .ops-track { flex: 1; height: 4px; background: #e9eee8; }.ops-track i { display: block; height: 100%; background: #77ae84; }
 .ops-ok { color: var(--teal); font-size: 10px; }
 .art-sensing { display: grid; place-items: center; background: #ede9f0; }
-.art-moodpal { position: relative; display: grid; grid-template-columns: .72fr 1.28fr; height: 285px; min-height: 285px !important; background: #e8eee4; }
-.moodpal-team-photo { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 51%; }
-.moodpal-brand-panel { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; overflow: hidden; padding: 20px; background: radial-gradient(circle at 20% 15%,#f8e6dd,transparent 45%),linear-gradient(145deg,#f1f2e8,#e5edf0); text-align: center; }
+.art-moodpal { position: relative; display: block; height: 285px; min-height: 285px !important; background: #e8eee4; }
+.moodpal-brand-panel { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; overflow: hidden; padding: 20px; background: radial-gradient(circle at 20% 15%,#f8e6dd,transparent 45%),linear-gradient(145deg,#f1f2e8,#e5edf0); text-align: center; }
 .moodpal-wordmark { display: block; width: min(76%,190px); aspect-ratio: 1; object-fit: cover; border-radius: 3px; mix-blend-mode: multiply; }
 .moodpal-brand-panel > span { color: #65736a; font: 7px/1.5 var(--mono); letter-spacing: .08em; }
 .moodpal-sticker { position: absolute; top: 13px; right: 12px; width: 43px; height: 43px; display: grid; place-content: center; border: 1px solid #d18b72; border-radius: 50%; background: #fffaf3; color: #a9533c; text-align: center; font: 400 17px/.8 var(--display); transform: rotate(8deg); }.moodpal-sticker sup { font-size: 9px; }.moodpal-sticker small { margin-top: 4px; font: 5px var(--mono); letter-spacing: .08em; }
@@ -271,6 +270,9 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--coral); outline
 .dialog-section h3 { margin: 0 0 10px; color: var(--teal-dark); font: 500 9px var(--mono); text-transform: uppercase; letter-spacing: .06em; }
 .dialog-section p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.8; }
 .dialog-note { margin-top: 22px; color: #78837b; font: 8px/1.7 var(--mono); }
+.dialog-image-wrap { margin: 22px 0 8px; overflow: hidden; border: 1px solid #e5e1d7; background: #e8ede7; }
+.dialog-image-wrap img { display: block; width: 100%; max-height: 340px; object-fit: contain; }
+.dialog-image-wrap figcaption { padding: 8px 11px; color: #718078; font: 8px var(--mono); }
 .case-source { width: max-content; max-width: 100%; margin-top: 15px; }
 
 /* Gentle motion, never required for reading */
@@ -347,5 +349,5 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--coral); outline
   .about-copy .about-lead { font-size: 21px; }.about-copy p { font-size: 12px; }.about-footline { margin-top: 20px; padding-top: 14px; font-size: 6px; }
   .contact-inner { padding-block: 68px; }.contact-inner > p { font-size: 12px; }.contact-buttons { gap: 7px; }.contact-placeholder { font-size: 8px; }
   .footer-inner { min-height: 84px; flex-wrap: wrap; gap: 10px; padding-block: 16px; }.footer-inner > span { width: calc(100% - 55px); text-align: right; line-height: 1.5; }.back-top { width: 100%; text-align: right; }
-  .dialog-inner { padding: 38px 20px 26px; }.case-dialog h2 { font-size: 29px; }.dialog-intro { font-size: 14px; }
+  .dialog-inner { padding: 38px 20px 26px; }.case-dialog h2 { font-size: 29px; }.dialog-intro { font-size: 14px; }.dialog-image-wrap img { max-height: 260px; }
 }

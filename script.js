@@ -44,6 +44,8 @@ const caseStudies = {
   },
   moodpal: {
     repository: 'https://github.com/adrianoggm/MoodPal',
+    image: 'assets/moodpalteam.png',
+    imageAlt: 'The MoodPal team together at HackForGood UGR 2024.',
     label: 'AWARD-WINNING TEAM PROJECT / HACKFORGOOD UGR 2024',
     title: 'MoodPal — emotional wellbeing, designed with care.',
     intro: 'A mental wellbeing app built with a multidisciplinary team during a 48-hour Telefónica-organised hackathon.',
@@ -119,6 +121,13 @@ document.querySelectorAll('[data-project]').forEach(button => button.addEventLis
   document.getElementById('case-label').textContent = detail.label;
   document.getElementById('case-title').textContent = detail.title;
   document.getElementById('case-intro').textContent = detail.intro;
+  const imageWrap = document.getElementById('case-image-wrap');
+  const caseImage = document.getElementById('case-image');
+  const imageCaption = document.getElementById('case-image-caption');
+  imageWrap.hidden = !detail.image;
+  caseImage.src = detail.image || '';
+  caseImage.alt = detail.imageAlt || '';
+  imageCaption.textContent = detail.image ? 'The MoodPal team at HackForGood UGR 2024' : '';
   document.getElementById('case-challenge').textContent = detail.challenge;
   document.getElementById('case-approach').textContent = detail.approach;
   document.getElementById('case-note').textContent = detail.note;

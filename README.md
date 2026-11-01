@@ -1,6 +1,6 @@
 # Adriano García-Giralda — Portfolio
 
-A responsive personal landing page for **https://adrianoggm.github.io/**, written in English with HTML, CSS and vanilla JavaScript. It presents Adriano's software engineering experience, research, and public work including [Onion-FL](https://github.com/adrianoggm/Onion-FL), [time-series image reconstruction](https://github.com/adrianoggm/time-series-image-reconstruction) and [FinGuard](https://github.com/adrianoggm/FinGuard). No Node.js or npm setup required.
+A responsive personal landing page for **https://adrianoggm.github.io/**, written in English with HTML, CSS and vanilla JavaScript. It presents Adriano's software engineering experience, research, a profile portrait, an Onion-FL architecture visual, a research figure and public work including [Onion-FL](https://github.com/adrianoggm/Onion-FL), [time-series image reconstruction](https://github.com/adrianoggm/time-series-image-reconstruction) and [FinGuard](https://github.com/adrianoggm/FinGuard). No Node.js or npm setup required.
 
 ## Local preview (Windows PowerShell)
 
@@ -45,7 +45,7 @@ This is optional and does not require changing your portfolio repository.
 - `styles.css`: design, color palette, responsive layout and animations.
 - `script.js`: project case studies, filters, mobile menu and interactive dialogs.
 - `config.js`: verified public email, LinkedIn and GitHub links. Change or remove them as desired before publishing.
-- `assets/`: favicon and 1200×630 PNG social sharing card.
+- `assets/`: favicon, social sharing card, profile portrait and research figures from the public time-series repository.
 - `.github/workflows/deploy.yml`: GitHub Pages deployment workflow.
 
 **Before publishing:** review any public contact details and company-related metrics or claims. Professional projects do not include client names, private configuration, sensitive architecture or proprietary code. Research project descriptions do not imply acceptance/publication of manuscripts.

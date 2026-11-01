@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#080d15" />
-    <meta name="description" content="Adriano García-Giralda — Software Engineer working across backend systems, data engineering, infrastructure and applied research. Explore selected work and projects." />
+    <meta name="description" content="Meet Adriano García-Giralda: software engineer and researcher building backend systems, data platforms and federated-learning tools. Explore project visuals and research figures." />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Adriano García-Giralda — Software Engineer" />
     <meta property="og:description" content="Complex systems. Clear impact. Software engineering, data platforms, infrastructure and research." />
@@ -48,26 +48,21 @@
     <main id="main">
       <section class="hero container" aria-labelledby="hero-title">
         <div class="hero-left reveal">
-          <div class="eyebrow"><span class="status-pulse" aria-hidden="true"></span> BACKEND · DATA INTEGRATION · DISTRIBUTED AI</div>
-          <h1 id="hero-title">Complex systems.<br /><em>Clear impact<span class="period">.</span></em></h1>
-          <p class="hero-intro">I build backend and data integration systems for connected products, and explore how intelligent software can work across distributed environments.</p>
+          <div class="eyebrow"><span class="status-pulse" aria-hidden="true"></span> SOFTWARE ENGINEER · RESEARCHER · BUILDER</div>
+          <h1 id="hero-title">I build systems<br />for the <em>real world<span class="period">.</span></em></h1>
+          <p class="hero-intro">Backend and data platforms in production. Federated learning and time-series research in the lab. I like bringing both worlds together.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
             <a class="button button-text" href="#about">A little about me <span aria-hidden="true">↓</span></a>
           </div>
           <div class="hero-location"><span class="crosshair" aria-hidden="true">✳</span> BASED IN SPAIN <span class="separator">/</span> BUILDING FOR ANYWHERE</div>
         </div>
-        <div class="hero-visual reveal" aria-label="Illustration showing engineering from signals to production systems">
-          <div class="visual-grid" aria-hidden="true"></div>
-          <div class="visual-topline"><span><i class="signal-dot"></i> SYSTEMS / CONNECTED</span><span>001—004</span></div>
-          <div class="orbit orbit-outer" aria-hidden="true"></div>
-          <div class="orbit orbit-middle" aria-hidden="true"></div>
-          <div class="orbit orbit-inner" aria-hidden="true"></div>
-          <div class="visual-core"><span class="core-bracket">{</span><span class="core-symbol">AG</span><span class="core-bracket">}</span></div>
-          <div class="node node-one"><span class="node-icon">⌁</span><span><strong>01 / INGEST</strong><small>APIs · IoT · Events</small></span></div>
-          <div class="node node-two"><span class="node-icon">◈</span><span><strong>02 / ENGINEER</strong><small>Backend · Data · ML</small></span></div>
-          <div class="node node-three"><span class="node-icon">↗</span><span><strong>03 / OPERATE</strong><small>Cloud · CI/CD · K8s</small></span></div>
-          <div class="visual-bottomline"><span>IDEAS → ENGINEERING → IMPACT</span><span class="visual-terminal">▌</span></div>
+        <div class="hero-visual profile-visual reveal" aria-label="Portrait of Adriano García-Giralda">
+          <img class="profile-photo" src="assets/adriano-profile.jpg" alt="Adriano García-Giralda at the coast" fetchpriority="high" />
+          <div class="portrait-frame" aria-hidden="true"></div>
+          <div class="portrait-sticker">BUILD<br />THINGS<br /><span>THAT MATTER</span></div>
+          <div class="portrait-caption"><span><i class="signal-dot"></i> ADRIANO GARCÍA-GIRALDA</span><span>ENGINEER / RESEARCHER</span></div>
+          <div class="portrait-coordinate" aria-hidden="true">37°10′N<br />03°35′W</div>
         </div>
       </section>
 
@@ -79,9 +74,36 @@
         </div>
       </section>
 
+      <section class="visual-lab container" aria-labelledby="visual-lab-heading">
+        <div class="section-heading reveal">
+          <div><div class="section-kicker"><span>01</span> / A LOOK UNDER THE HOOD</div><h2 id="visual-lab-heading">Less talk.<br /><em>More signal.</em></h2></div>
+          <p>A federated-learning system I built, and a real figure from my time-series reconstruction research.</p>
+        </div>
+        <div class="showcase-grid">
+          <article class="showcase-card fl-showcase reveal">
+            <div class="showcase-top"><span>ONION-FL / SYSTEM VIEW</span><a href="https://github.com/adrianoggm/Onion-FL" target="_blank" rel="noopener noreferrer">SOURCE ↗</a></div>
+            <div class="fl-diagram" role="img" aria-label="Onion-FL hierarchical edge, fog and cloud architecture">
+              <div class="diagram-cloud"><span class="diagram-node cloud-node">CLOUD <small>coordinator</small></span></div>
+              <div class="diagram-links cloud-links"><i></i><i></i></div>
+              <div class="diagram-fogs"><span class="diagram-node fog-node">FOG A <small>aggregator</small></span><span class="diagram-node fog-node">FOG B <small>aggregator</small></span></div>
+              <div class="diagram-links edge-links"><i></i><i></i><i></i><i></i></div>
+              <div class="diagram-edges"><span class="edge-device">EDGE 01</span><span class="edge-device">EDGE 02</span><span class="edge-device">EDGE 03</span><span class="edge-device">EDGE 04</span></div>
+            </div>
+            <div class="showcase-bottom"><div><strong>Edge → Fog → Cloud</strong><span>Hierarchical federated learning</span></div><div class="showcase-pills"><span>SIMULATOR</span><span>MQTT</span><span>LIVE MONITOR</span></div></div>
+          </article>
+          <article class="showcase-card paper-showcase reveal">
+            <div class="showcase-top"><span>TIME-SERIES RESEARCH / FIGURE</span><a href="https://github.com/adrianoggm/time-series-image-reconstruction" target="_blank" rel="noopener noreferrer">PAPER + CODE ↗</a></div>
+            <a class="paper-image-link" href="https://github.com/adrianoggm/time-series-image-reconstruction" target="_blank" rel="noopener noreferrer" aria-label="Open time-series image reconstruction research repository">
+              <img src="assets/time-series-reconstruction.png" alt="Research plot comparing original and GADF-reconstructed synthetic time-series signals; the curves closely overlap." loading="lazy" />
+            </a>
+            <div class="showcase-bottom"><div><strong>Can an image give a signal back?</strong><span>Original vs. reconstructed GADF signals</span></div><span class="figure-index">FIG. 01</span></div>
+          </article>
+        </div>
+      </section>
+
       <section class="section work-section container" id="work" aria-labelledby="work-heading">
         <div class="section-heading reveal">
-          <div><div class="section-kicker"><span>01</span> / SELECTED WORK</div><h2 id="work-heading">Things I've <em>built & explored.</em></h2></div>
+          <div><div class="section-kicker"><span>02</span> / SELECTED WORK</div><h2 id="work-heading">Things I've <em>built & explored.</em></h2></div>
           <p>A selection of engineering challenges and research directions. Some work is proprietary; the ideas and technical decisions are what I can share.</p>
         </div>
         <div class="filters reveal" role="group" aria-label="Filter projects">
@@ -100,7 +122,7 @@
             <div class="project-body"><div class="project-meta"><span>ENGINEERING</span><span>PROFESSIONAL WORK</span></div><h3>Building the data layer of smarter cities.</h3><p>Multi-provider IoT integrations, resilient ETL pipelines and backend services that connect fragmented real-world systems.</p><div class="tag-row"><span>TypeScript</span><span>Python</span><span>NestJS</span><span>ETL</span></div><button class="project-open" type="button" data-project="platform" aria-label="Read more about smart city data platform">View case study <span aria-hidden="true">↗</span></button></div>
           </article>
           <article class="project-card reveal" data-category="research">
-            <div class="project-art art-series" aria-hidden="true"><div class="matrix matrix-one"></div><div class="matrix matrix-two"></div><div class="series-wave"><svg viewBox="0 0 300 100" preserveAspectRatio="none"><path d="M0 52 C20 52 25 12 44 18 S79 86 102 63 S133 10 152 34 S193 86 209 52 S239 11 256 46 S286 81 300 32" fill="none" stroke="currentColor" stroke-width="2"/></svg></div><span class="art-foot">TIME SERIES / RECONSTRUCTION</span></div>
+            <div class="project-art art-series" aria-hidden="true"><img class="project-thumb" src="assets/time-series-encodings.png" alt="" loading="lazy" /><span class="art-foot">TIME SERIES / RECONSTRUCTION</span></div>
             <div class="project-body"><div class="project-meta"><span>RESEARCH</span><span>MANUSCRIPT</span></div><h3>How much of a time series survives its image?</h3><p>Studying information loss and reconstruction across temporal image representations, with reproducible decoding benchmarks.</p><div class="tag-row"><span>Python</span><span>Time Series</span><span>Benchmarking</span></div><button class="project-open" type="button" data-project="reconstruction" aria-label="Read more about time series reconstruction research">Explore research <span aria-hidden="true">↗</span></button></div>
           </article>
           <article class="project-card reveal" data-category="research">
@@ -112,7 +134,7 @@
             <div class="project-body"><div class="project-meta"><span>ENGINEERING</span><span>PROFESSIONAL WORK</span></div><h3>From commit to production, with confidence.</h3><p>Maintaining containerized platforms, CI/CD workflows, routing and observability for client-facing services.</p><div class="tag-row"><span>Kubernetes</span><span>Docker</span><span>GitLab CI</span><span>Grafana</span></div><button class="project-open" type="button" data-project="devops" aria-label="Read more about production delivery engineering">View case study <span aria-hidden="true">↗</span></button></div>
           </article>
           <article class="project-card project-wide reveal" data-category="engineering">
-            <div class="project-art art-sensing" aria-hidden="true"><div class="sensing-plot"><span>AI</span><div class="sensor-track"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span>API</span></div><div class="sensing-caption">ASK <span>→</span> VALIDATE <span>→</span> AUTHORISE</div><span class="art-foot">CONVERSATIONAL AI / FINANCIAL SERVICES</span></div>
+            <div class="project-art art-sensing" aria-hidden="true"><div class="bank-mock"><div class="bank-mock-head"><b>FinGuard</b><span>LOCAL DEMO</span></div><div class="bank-bubble">Show my spending by category</div><div class="bank-answer"><strong>Spending overview</strong><div class="bank-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="bank-legend"><span>HOME</span><span>FOOD</span><span>OTHER</span></div></div><div class="bank-mock-foot">SYNTHETIC DATA · NO BANK CONNECTED</div></div><span class="art-foot">CONVERSATIONAL AI / FINANCIAL SERVICES</span></div>
             <div class="project-body"><div class="project-meta"><span>ENGINEERING</span><span>OPEN-SOURCE PROOF OF CONCEPT</span></div><h3>FinGuard — a banking assistant with clear boundaries.</h3><p>A voice and text assistant for account insights that keeps model interpretation separate from deterministic services and user-authorised actions.</p><div class="tag-row"><span>Python</span><span>LangGraph</span><span>LLM</span><span>Safety</span></div><button class="project-open" type="button" data-project="finguard" aria-label="Read more about FinGuard">Explore project <span aria-hidden="true">↗</span></button></div>
           </article>
         </div>

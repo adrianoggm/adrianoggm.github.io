@@ -14,6 +14,9 @@ const caseStudies = {
   },
   reconstruction: {
     repository: 'https://github.com/adrianoggm/time-series-image-reconstruction',
+    image: 'assets/time-series-benchmark.png',
+    imageAlt: 'Cross-domain time-series reconstruction figure comparing multiple image encodings across seven datasets.',
+    imageCaption: 'Research figure from the current cross-domain benchmark: seven datasets across six domains.',
     label: 'RESEARCH / MANUSCRIPT',
     title: 'How much of a time series survives its image?',
     intro: 'An experimental look at what relational image encodings preserve — and what they discard.',
@@ -21,6 +24,29 @@ const caseStudies = {
     approach: 'Built a comparative cross-domain experimental framework for Recurrence Plots, Gramian Angular Fields, Markov Transition Fields and XIRP, exploring image-only inverse methods, quantization and reconstruction performance.',
     tags: ['Python', 'Time Series', 'Signal Representation', 'Inverse Problems', 'Reproducibility'],
     note: 'Research manuscript. Publication status and links will be updated when public.'
+  },
+  flower: {
+    repository: 'https://github.com/adrianoggm/flower-basic',
+    image: 'assets/flower-basic-comparison.png',
+    imageAlt: 'Federated versus centralized ECG5000 experiment comparison plots.',
+    imageCaption: 'Original prototype plots; later analysis found dataset leakage and no significant difference (p = 0.592).',
+    label: 'RESEARCH ENGINEERING / FEDERATED LEARNING EVALUATION',
+    title: 'Flower Basic - fog computing with a careful re-evaluation.',
+    intro: 'A Flower and MQTT prototype for hierarchical federated learning, paired with an honest statistical review of its benchmark.',
+    challenge: 'A high score is only useful when the experiment avoids leakage and supports a statistically meaningful comparison.',
+    approach: 'Built a hierarchical fog-computing demo with a 1D CNN on ECG5000, then audited the evaluation. The repository reports no significant difference between federated and centralized approaches (p = 0.592) and detected 92.1% data leakage in the dataset split.',
+    tags: ['Python', 'Flower', 'MQTT', 'ECG5000', 'Statistical evaluation'],
+    note: 'The plot shows the prototype results; the README documents the leakage finding and its limits.'
+  },
+  truebeam: {
+    repository: 'https://github.com/adrianoggm/TrueBeamControl',
+    label: 'DATA TOOLING / QUALITY CONTROL',
+    title: 'TrueBeam quality checks, made easier to inspect.',
+    intro: 'A small interactive tool for reviewing daily accelerator quality-control CSVs.',
+    challenge: 'Quality checks arrive in different files and formats, while teams need to compare values over time against clear tolerances.',
+    approach: 'Built a Streamlit dashboard and reusable plotting script that normalize dates, filter TrueBeam 2 MPC and QuickCheck CAX records, aggregate by day, week or month, and report statistics against the stated tolerances.',
+    tags: ['Python', 'Streamlit', 'Pandas', 'Plotly', 'CSV analytics'],
+    note: 'The portfolio graphic shows the README tolerance ranges only; it contains no measured data.'
   },
   onion: {
     repository: 'https://github.com/adrianoggm/Onion-FL',
@@ -34,6 +60,9 @@ const caseStudies = {
   },
   finguard: {
     repository: 'https://github.com/adrianoggm/FinGuard',
+    image: 'assets/finguard-conversation.png',
+    imageAlt: 'FinGuard mobile conversational interface showing an expense chart by category.',
+    imageCaption: 'Real FinGuard interface screenshot; the demo uses generated financial data.',
     label: 'ENGINEERING / OPEN-SOURCE PROOF OF CONCEPT',
     title: 'FinGuard — a banking assistant with clear boundaries.',
     intro: 'A conversational assistant for exploring financial data and preparing payment actions.',
@@ -44,6 +73,9 @@ const caseStudies = {
   },
   footballhub: {
     repository: 'https://github.com/adrianoggm/footballhubmanager',
+    image: 'assets/footballhub-players.png',
+    imageAlt: 'FootballHubManager player directory with filters and season roles.',
+    imageCaption: 'Real project screenshot populated with sample player data.',
     label: 'PRODUCT ENGINEERING / FULL-STACK SIDE PROJECT',
     title: 'FootballHubManager — match data for the whole community.',
     intro: 'A full-stack platform for amateur football communities, from player and season management to match-based insights.',
@@ -56,6 +88,7 @@ const caseStudies = {
     repository: 'https://github.com/adrianoggm/MoodPal',
     image: 'assets/moodpalteam.png',
     imageAlt: 'The MoodPal team together at HackForGood UGR 2024.',
+    imageCaption: 'The MoodPal team at HackForGood UGR 2024.',
     label: 'AWARD-WINNING TEAM PROJECT / HACKFORGOOD UGR 2024',
     title: 'MoodPal — emotional wellbeing, designed with care.',
     intro: 'A mental wellbeing app built with a multidisciplinary team during a 48-hour Telefónica-organised hackathon.',
@@ -137,7 +170,7 @@ document.querySelectorAll('[data-project]').forEach(button => button.addEventLis
   imageWrap.hidden = !detail.image;
   caseImage.src = detail.image || '';
   caseImage.alt = detail.imageAlt || '';
-  imageCaption.textContent = detail.image ? 'The MoodPal team at HackForGood UGR 2024' : '';
+  imageCaption.textContent = detail.imageCaption || '';
   document.getElementById('case-challenge').textContent = detail.challenge;
   document.getElementById('case-approach').textContent = detail.approach;
   document.getElementById('case-note').textContent = detail.note;

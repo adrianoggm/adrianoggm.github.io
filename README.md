@@ -1,6 +1,6 @@
 # Adriano García-Giralda — Portfolio
 
-A responsive personal landing page for **https://adrianoggm.github.io/**, written in English with HTML, CSS and vanilla JavaScript. It presents Adriano's software engineering experience, research, a profile portrait, an Onion-FL architecture visual, a research figure and public work including [Onion-FL](https://github.com/adrianoggm/Onion-FL), [time-series image reconstruction](https://github.com/adrianoggm/time-series-image-reconstruction), [FinGuard](https://github.com/adrianoggm/FinGuard) and [FootballHubManager](https://github.com/adrianoggm/footballhubmanager). No Node.js or npm setup required.
+A responsive personal landing page for **https://adrianoggm.github.io/**, written in English with HTML, CSS and vanilla JavaScript. It presents Adriano's software engineering experience, research, a profile portrait, an Onion-FL architecture visual, a research figure and public work including [Onion-FL](https://github.com/adrianoggm/Onion-FL), [time-series image reconstruction](https://github.com/adrianoggm/time-series-image-reconstruction), [Flower Basic](https://github.com/adrianoggm/flower-basic), [FinGuard](https://github.com/adrianoggm/FinGuard), [FootballHubManager](https://github.com/adrianoggm/footballhubmanager) and [TrueBeamControl](https://github.com/adrianoggm/TrueBeamControl). No Node.js or npm setup required.
 
 ## Local preview (Windows PowerShell)
 
@@ -45,7 +45,7 @@ This is optional and does not require changing your portfolio repository.
 - `styles.css`: design, color palette, responsive layout and animations.
 - `script.js`: project case studies, filters, mobile menu and interactive dialogs.
 - `config.js`: verified public email, LinkedIn and GitHub links. Change or remove them as desired before publishing.
-- `assets/`: favicon, social sharing card, profile portrait, research figures, MoodPal logo and team photo, Onion-FL topology renderings, and a FootballHubManager dashboard screenshot using sample data.
+- `assets/`: favicon, social sharing card, profile portrait, research figures, MoodPal logo and team photo, Onion-FL topology renderings, authentic FinGuard and FootballHubManager interface screenshots (sample data), a Flower Basic comparison plot, a TrueBeam tolerance-range illustration based on its README, and cross-domain time-series research figures.
 - `.github/workflows/deploy.yml`: GitHub Pages deployment workflow.
 
 **Before publishing:** review any public contact details and company-related metrics or claims. Professional projects do not include client names, private configuration, sensitive architecture or proprietary code. Research project descriptions do not imply acceptance/publication of manuscripts.

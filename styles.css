@@ -144,6 +144,19 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--coral); outline
 .art-right { right: 17px; }
 .art-series { background: #f1f3ee; }
 .project-thumb { display: block; width: 100%; height: 100%; padding: 4px; background: #f1f3ee; object-fit: contain; }
+.art-finguard, .art-flower { background: #e9eeea; }
+.finguard-thumb { padding: 12px; object-fit: contain; object-position: center 42%; }
+.flower-thumb { padding: 8px; object-fit: contain; background: #fff; }
+.art-finguard .art-foot, .art-flower .art-foot, .art-truebeam .art-foot { z-index: 1; padding: 5px 7px; border-radius: 2px; background: rgba(255,254,250,.94); color: #526459; }
+.art-truebeam { display: grid; place-items: center; background: linear-gradient(140deg,#e8eee5,#f4e9dc); }
+.truebeam-panel { width: min(78%,420px); padding: 18px 20px 14px; border: 1px solid #d9ded2; background: rgba(255,254,250,.94); box-shadow: 0 10px 28px rgba(45,65,52,.08); }
+.truebeam-panel > div { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 9px 16px; padding: 7px 0; }
+.truebeam-panel > div + div { border-top: 1px solid #e8e5dc; }
+.truebeam-panel span, .truebeam-panel small { color: #66766b; font: 7px var(--mono); letter-spacing: .04em; }
+.truebeam-panel b { color: var(--teal-dark); font: 500 19px var(--display); }
+.truebeam-panel i { grid-column: 1 / -1; height: 5px; overflow: hidden; border-radius: 9px; background: #e9e9dd; }
+.truebeam-panel i em { display: block; width: 68%; height: 100%; margin: auto; border-right: 1px solid #c27b62; border-left: 1px solid #c27b62; background: #9cba9c; }
+.truebeam-panel small { display: block; margin-top: 8px; font-size: 6px; }
 .art-footballhub { background: #211a17; }.footballhub-thumb { padding: 0; background: #211a17; object-fit: cover; object-position: top center; }.art-footballhub .art-foot { z-index: 1; padding: 5px 7px; border-radius: 2px; background: rgba(255,254,250,.94); color: #526459; }
 .art-series .art-foot { padding: 5px 7px; background: rgba(255,254,250,.9); }
 .art-edge { background: #e5f0e8; }

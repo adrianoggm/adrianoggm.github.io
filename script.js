@@ -98,12 +98,12 @@ const caseStudies = {
     imageCaption: 'The MoodPal team at HackForGood UGR 2024.',
     label: 'AWARD-WINNING TEAM PROJECT / HACKFORGOOD UGR 2024',
     title: 'MoodPal — emotional wellbeing, designed with care.',
-    intro: 'MoodPal was an interdisciplinary collaboration created during the IX HackForGood UGR: seven teammates had 48 hours to turn a social-impact challenge into a working concept.',
-    challenge: 'How can a short hackathon turn an abstract wellbeing challenge into practical support someone can reach in a difficult moment? We centered the experience on noticing emotions and finding a clear route to help.',
-    approach: 'The team brought together computing, social sciences, economics and biology, so technical and human perspectives shaped the idea together. I contributed to the Android prototype: emotion check-ins, virtual companion Lani, a panic button and routes to professional support.',
-    outcome: 'MoodPal won second prize (\u20ac600) at the UGR event and qualified for the national phase. This was a shared result of seven people collaborating across disciplines in 48 hours.',
+    intro: 'MoodPal grew from a social-impact challenge into an interdisciplinary product concept: emotional self-management for users, plus a way for psychologists to make their services accessible.',
+    challenge: 'Emotional distress can affect people across age, income, nationality, gender and work situation, while access to professional support may be difficult. MoodPal asked how an app could help people recognize and manage emotions while connecting them with qualified psychologists.',
+    approach: 'Seven teammates from computing, social sciences, economics and biology shaped two connected experiences. For the initial Spain-focused audience aged 18-40, we designed check-ins around Plutchik\'s wheel, an emotion calendar, educational resources and tips, companion Lani and a panic button. For psychologists, we designed service profiles, chats and online or in-person consultations. I contributed to the Java/Android prototype; the chatbot combined GPT-3.5 and Dialogflow through Kommunicate, alongside a web interface in HTML and CSS.',
+    outcome: 'MoodPal won second prize at HackForGood UGR and qualified for the national phase. The psychologist-facing service was part of the product idea from the start: professionals could gain visibility and offer online or in-person sessions.',
     tags: ['Java', 'Android', 'Emotion tracking', 'Virtual assistant', 'Team project'],
-    note: 'Student hackathon prototype developed by a team. MoodPal is a wellbeing project, not a substitute for professional care.'
+    note: 'The prototype was developed for Android; broader platform support and wearable integrations were future ideas. MoodPal is a wellbeing project, not a substitute for professional care.',
   },
   devops: {
     label: 'ENGINEERING / PROFESSIONAL WORK',

@@ -98,10 +98,10 @@ const caseStudies = {
     imageCaption: 'The MoodPal team at HackForGood UGR 2024.',
     label: 'AWARD-WINNING TEAM PROJECT / HACKFORGOOD UGR 2024',
     title: 'MoodPal — emotional wellbeing, designed with care.',
-    intro: 'At the IX edition of HackForGood UGR, 58 students in seven teams had 48 hours to shape solutions to social challenges. The event was open to adult university students; our team chose emotional wellbeing.',
+    intro: 'MoodPal was an interdisciplinary collaboration created during the IX HackForGood UGR: seven teammates had 48 hours to turn a social-impact challenge into a working concept.',
     challenge: 'How can a short hackathon turn an abstract wellbeing challenge into practical support someone can reach in a difficult moment? We centered the experience on noticing emotions and finding a clear route to help.',
-    approach: 'Our seven-person team brought together computing, social sciences, economics and biology. I contributed to an Android prototype combining emotion check-ins, virtual companion Lani, a panic button and routes to professional support.',
-    outcome: 'MoodPal won the second prize (?600) at the UGR event and qualified for the national phase. The result came from a multidisciplinary team working together over 48 hours.',
+    approach: 'The team brought together computing, social sciences, economics and biology, so technical and human perspectives shaped the idea together. I contributed to the Android prototype: emotion check-ins, virtual companion Lani, a panic button and routes to professional support.',
+    outcome: 'MoodPal won second prize (\u20ac600) at the UGR event and qualified for the national phase. This was a shared result of seven people collaborating across disciplines in 48 hours.',
     tags: ['Java', 'Android', 'Emotion tracking', 'Virtual assistant', 'Team project'],
     note: 'Student hackathon prototype developed by a team. MoodPal is a wellbeing project, not a substitute for professional care.'
   },

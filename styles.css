@@ -339,3 +339,15 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--coral); outline
   .footer-inner { min-height: 84px; flex-wrap: wrap; gap: 10px; padding-block: 16px; }.footer-inner > span { width: calc(100% - 55px); text-align: right; line-height: 1.5; }.back-top { width: 100%; text-align: right; }
   .dialog-inner { padding: 38px 20px 26px; }.case-dialog h2 { font-size: 29px; }.dialog-intro { font-size: 14px; }.dialog-image-wrap img { max-height: 260px; }
 }
+
+/* How I work — field notes */
+.notes-section { padding-block: 104px 40px; }
+.notes-section .section-heading h2 em { color: var(--coral); }
+.notes-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 56px; border-top: 1px solid var(--line); }
+.note { padding: 26px 0 28px; border-bottom: 1px solid var(--line); }
+.note-meta { display: flex; gap: 10px; color: var(--teal); font: 8px var(--mono); letter-spacing: .08em; }
+.note-meta span { color: var(--coral); }
+.note h3 { margin: 12px 0 10px; font: 400 23px/1.2 var(--display); letter-spacing: -.02em; }
+.note p { max-width: 500px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.85; }
+@media (max-width: 800px) { .notes-grid { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .notes-section { padding-block: 73px 20px; } .note h3 { font-size: 20px; } .note p { font-size: 12px; } }

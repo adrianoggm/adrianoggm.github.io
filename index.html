@@ -35,13 +35,14 @@
         <nav class="nav" aria-label="Main navigation">
           <a href="#work">Work</a>
           <a href="#expertise">Expertise</a>
+          <a href="#how-i-work">How I work</a>
           <a href="#about">About</a>
         </nav>
         <a href="#contact" class="nav-contact">Let's connect <span aria-hidden="true">↗</span></a>
         <button class="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
       </div>
       <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation" hidden>
-        <a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#about">About</a><a href="#contact">Contact</a>
+        <a href="#work">Work</a><a href="#expertise">Expertise</a><a href="#how-i-work">How I work</a><a href="#about">About</a><a href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -158,7 +159,7 @@
       </section>
 
       <section class="section expertise-section" id="expertise" aria-labelledby="expertise-heading"><div class="container">
-        <div class="section-heading reveal"><div><div class="section-kicker"><span>02</span> / WHAT I DO</div><h2 id="expertise-heading">Curiosity meets <em>execution.</em></h2></div><p>I enjoy problems that don't fit neatly into a single job title.</p></div>
+        <div class="section-heading reveal"><div><div class="section-kicker"><span>03</span> / WHAT I DO</div><h2 id="expertise-heading">Curiosity meets <em>execution.</em></h2></div><p>I enjoy problems that don't fit neatly into a single job title.</p></div>
         <div class="expertise-grid">
           <div class="expertise-item reveal"><span class="expertise-number">01 /</span><div class="expertise-icon">⌘</div><h3>Backend & Integrations</h3><p>Building maintainable microservices and connectors that turn varied APIs, devices and platforms into dependable products.</p><span class="expertise-tech">TypeScript / NestJS / Python / REST / RabbitMQ</span></div>
           <div class="expertise-item reveal"><span class="expertise-number">02 /</span><div class="expertise-icon">⋈</div><h3>Data Engineering</h3><p>Making heterogeneous data useful through ingestion, ETL, time-series storage and analytics workflows.</p><span class="expertise-tech">ETL / IoT / MySQL / MongoDB / InfluxDB / Azure</span></div>
@@ -167,9 +168,28 @@
         </div>
       </div></section>
 
+      <section class="section notes-section container" id="how-i-work" aria-labelledby="notes-heading">
+        <div class="section-heading reveal">
+          <div><div class="section-kicker"><span>04</span> / HOW I WORK</div><h2 id="notes-heading">Field notes from <em>production.</em></h2></div>
+          <p>Habits I picked up shipping and running real systems, most of them the hard way. The tools change; these don't.</p>
+        </div>
+        <div class="notes-grid">
+          <article class="note reveal"><div class="note-meta"><span>01</span>OPERATIONS</div><h3>Production is read-only until proven otherwise.</h3><p>When something breaks in production, I look before I touch anything. I gather evidence (logs, events, node state, diffs), write down a diagnosis and a proposed fix, and only then change things, with the people who own the system knowing what is about to happen. A fix nobody understood just becomes the next incident.</p></article>
+          <article class="note reveal"><div class="note-meta"><span>02</span>DELIVERY</div><h3>A deploy is a checklist, not a command.</h3><p>Before applying, I confirm that every image the change references exists in the registry, and I run a diff that should show only what I expect. During the rollout, I watch which node each pod lands on: a node low on disk will evict your pods while it pulls a 1 GB image. Afterwards, I test from the outside. “Running” is not the same as working.</p></article>
+          <article class="note reveal"><div class="note-meta"><span>03</span>COMMUNICATION</div><h3>Narrate the waits.</h3><p>Rollouts, image pulls and migrations are where incidents hide. I say up front what I’m waiting for and why. I use short timeouts with checks in between, and I report evictions, restarts or unexpected diffs as soon as they appear, not at the end.</p></article>
+          <article class="note reveal"><div class="note-meta"><span>04</span>SECURITY</div><h3>Secrets never travel in clear text.</h3><p>Secrets live encrypted in the repository (SOPS + age) and a script applies them. Passwords go through stdin, never as arguments or into shell history. When I generate a credential, I fill it in and encrypt it in the same command, so a plaintext copy never touches the disk.</p></article>
+          <article class="note reveal"><div class="note-meta"><span>05</span>DATA</div><h3>Rehearse what can’t be undone.</h3><p>Schema changes can’t be rolled back, so they run against a local copy of the database first. I’m just as wary of scripts that stitch migrations together: a single missing trailing newline can silently turn the next statement into a comment.</p></article>
+          <article class="note reveal"><div class="note-meta"><span>06</span>DOCUMENTATION</div><h3>Write down the traps.</h3><p>The README holds the steps; next to it, I keep the gotchas that cost me time: line endings that break shell scripts, certificate files with no trailing newline, archive filenames that vanish when extracted on Windows. The next person, usually future me, shouldn’t pay for them twice.</p></article>
+          <article class="note reveal"><div class="note-meta"><span>07</span>ARCHITECTURE</div><h3>Architecture as a shared vocabulary.</h3><p>For backend services I default to hexagonal architecture and CQRS, in NestJS and FastAPI. Every service uses the same layers, naming, structured logs and README template. I don’t do it for purity: it means any teammate can open any service and know where things are.</p></article>
+          <article class="note reveal"><div class="note-meta"><span>08</span>CRAFT</div><h3>Less code, on purpose.</h3><p>Before writing something, I check three things: does it need to exist, do the standard library or the platform already do it, and what is the smallest version that works. Every task goes from ticket to branch to merge request in small, atomic commits that someone can actually review.</p></article>
+          <article class="note reveal"><div class="note-meta"><span>09</span>AI-ASSISTED ENGINEERING</div><h3>Teach the team, and the agents.</h3><p>I turn recurring procedures into playbooks that both people and AI coding agents can follow: onboarding a new tenant, building Power BI models as code on Fabric, writing data-lineage documents for clients. The agents follow the same rules as everyone else: production is read-only, verify before applying, no secrets in clear text.</p></article>
+          <article class="note reveal"><div class="note-meta"><span>10</span>RESEARCH</div><h3>Honest results over pretty charts.</h3><p>Baselines, statistical tests and a hunt for leakage come before any celebration. When I re-evaluated my own federated-learning prototype, I found no significant difference from centralized training, and I found leakage in the dataset split. New research ideas go through an adversarial review that looks for prior work that would sink them.</p></article>
+        </div>
+      </section>
+
       <section class="section about-section container" id="about" aria-labelledby="about-heading">
         <div class="about-layout">
-          <div class="about-heading reveal"><div class="section-kicker"><span>03</span> / THE PERSON BEHIND THE CODE</div><h2 id="about-heading">Curious by default.<br /><em>Builder by habit.</em></h2><div class="about-orbit" aria-hidden="true"><span>ASK WHY</span><span>TRY IT</span><span>MAKE IT REAL</span></div></div>
+          <div class="about-heading reveal"><div class="section-kicker"><span>05</span> / THE PERSON BEHIND THE CODE</div><h2 id="about-heading">Curious by default.<br /><em>Builder by habit.</em></h2><div class="about-orbit" aria-hidden="true"><span>ASK WHY</span><span>TRY IT</span><span>MAKE IT REAL</span></div></div>
           <div class="about-copy reveal">
             <p class="about-lead">I’m happiest when an idea stops being abstract and starts <em>working.</em></p>
             <p>That might mean tracing a stubborn bug, testing a different approach, or staying up too late on a side project because I want to see where it goes. Sometimes there’s a real problem to solve; sometimes the idea is simply too interesting to leave alone.</p>
@@ -180,7 +200,7 @@
         </div>
       </section>
 
-      <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="container contact-inner reveal"><div class="section-kicker"><span>04</span> / GET IN TOUCH</div><h2 id="contact-heading">Have a hard problem?<br /><em>Let's build something good.</em></h2><p>Interested in engineering, applied research or collaborating on something ambitious? I'd love to hear about it.</p><div class="contact-buttons"><a id="contact-email" class="button button-primary" href="#contact" hidden>Email me <span aria-hidden="true">↗</span></a><a id="contact-linkedin" class="button button-outline" href="#contact" hidden target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a id="contact-github" class="button button-outline" href="#contact" hidden target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a id="contact-x" class="button button-outline" href="#contact" hidden target="_blank" rel="noopener noreferrer">X <span aria-hidden="true">↗</span></a><span id="contact-placeholder" class="contact-placeholder">Contact links will be added before the website is published.</span></div></div></section>
+      <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="container contact-inner reveal"><div class="section-kicker"><span>06</span> / GET IN TOUCH</div><h2 id="contact-heading">Have a hard problem?<br /><em>Let's build something good.</em></h2><p>Interested in engineering, applied research or collaborating on something ambitious? I'd love to hear about it.</p><div class="contact-buttons"><a id="contact-email" class="button button-primary" href="#contact" hidden>Email me <span aria-hidden="true">↗</span></a><a id="contact-linkedin" class="button button-outline" href="#contact" hidden target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a id="contact-github" class="button button-outline" href="#contact" hidden target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a id="contact-x" class="button button-outline" href="#contact" hidden target="_blank" rel="noopener noreferrer">X <span aria-hidden="true">↗</span></a><span id="contact-placeholder" class="contact-placeholder">Contact links will be added before the website is published.</span></div></div></section>
     </main>
 
     <footer class="site-footer"><div class="container footer-inner"><a href="#top" class="logo footer-logo" aria-label="Back to top">a<span class="logo-star">✳</span>g<span class="logo-dot">.</span></a><span>© <span id="current-year">2026</span> Adriano García-Giralda Milena. Built with intention.</span><a href="#top" class="back-top">BACK TO TOP ↑</a></div></footer>
